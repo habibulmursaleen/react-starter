@@ -1,0 +1,17 @@
+version: "3"
+services:
+  react-app:
+    # stdin_open: true
+    # tty: true
+  build:
+    context: .
+    dockerfile: Dockerfile
+  ports:
+    - "3000:3000"
+    # - "8080:80" for nginx
+  volumes:
+    - ./src:/app/src
+  env_file:
+    - ./env
+  environment:
+    - REACT_APP_NAME=myname

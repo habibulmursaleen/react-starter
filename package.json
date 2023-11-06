@@ -1,0 +1,87 @@
+{
+  "name": "@chowdhury/vite-react-redux-ts-starter",
+  "description": "A starter template for React with Typescript using Vite and Redux",
+  "version": "1.0.4",
+  "type": "module",
+  "bin": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/habibulmursaleen/vite-react-ts-starter.git"
+  },
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Starter Template",
+    "Redux"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:prod": "NODE_ENV=production npm run build",
+    "start:dev": "NODE_ENV=dev npm-run-dev",
+    "lint": "eslint . --ext js,jsx,mjs,ts,tsx --fix",
+    "test": "vitest",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "preview": "vite preview",
+    "precommit": "npm run lint && npm run format"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@playwright/test": "^1.39.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "chai": "^4.3.10",
+    "eslint": "^8.53.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^15.0.2",
+    "mocha": "^10.2.0",
+    "playwright": "^1.39.0",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
