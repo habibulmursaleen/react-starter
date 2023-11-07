@@ -22,13 +22,17 @@
   },
   "include": [
     "vite.config.ts",
+    "vitest.config.ts",
     ".eslintrc.cjs",
     "commitlint.config.cjs",
     "postcss.config.js",
     "tailwind.config.js",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src"
+    "src",
+    "setupTests.ts",
+    "playwright.config.ts",
+    "e2e"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

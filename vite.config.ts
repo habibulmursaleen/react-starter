@@ -10,9 +10,14 @@ import testPlugin from "vite-plugin-test";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), testPlugin()],
+  server: {
+    host: true,
+    strictPort: true,
+  },
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: ["./src/setupTests.ts"],
+    setupFiles: ["./vitest.config.ts"],
+    css: true,
   },
 });

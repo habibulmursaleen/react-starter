@@ -9,7 +9,8 @@
     "build:prod": "NODE_ENV=production npm run build",
     "start:dev": "NODE_ENV=dev npm-run-dev",
     "lint": "eslint . --ext js,jsx,mjs,ts,tsx --fix",
-    "test": "mocha --require ts-node/register 'src/**/*.test.{ts,tsx,js,jsx}'",
+    "test": "mocha --require ts-node/register 'src/**/*.test.{ts,tsx,js,jsx}' && playwright test",
+    "test:e2e": "playwright test show-report",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "preview": "vite preview",
     "precommit": "npm run lint && npm run format"
@@ -24,9 +25,11 @@
   "devDependencies": {
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
+    "@playwright/test": "^1.39.0",
     "@testing-library/react": "^14.0.0",
     "@types/chai": "^4.3.9",
     "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.10",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
