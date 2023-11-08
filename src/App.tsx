@@ -1,33 +1,38 @@
-import { useState } from "react";
 import viteLogo from "../public/vite.svg";
-import "./App.css";
 import reactLogo from "./assets/react.svg";
+import reduxLogo from "./assets/Reduxlogo.svg";
+import Counter from "./components/Counter";
 
 function App() {
-  const [countValue, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <div className="flex justify-center items-center">
+        <a
+          href="https://vitejs.dev"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-4"
+        >
+          <img src={viteLogo} className="logo w-32 h-32" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a
+          href="https://react.dev"
+          target="blank"
+          rel="noreferrer"
+          className="ml-4"
+        >
+          <img src={reactLogo} className="logo w-32 h-32" alt="React logo" />
+        </a>
+        <a
+          href="https://redux-toolkit.js.org"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-4"
+        >
+          <img src={reduxLogo} className="logo w-32 h-32" alt="Redux logo" />
         </a>
       </div>
-      <h1 data-testid="app-title">Vite + React</h1>
-      <div className="card">
-        <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {countValue}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Counter />
     </>
   );
 }
