@@ -16,43 +16,29 @@ A minimalistic Vite-based starter template for building React applications with 
 - **Husky and lint-staged**: For pre-commit code quality checks.
 - **Commitlint**: For ensuring consistent commit messages.
 
-## Getting Started
+# Getting Started
 
-1. **Clone the repository**:
+## Installation
 
-```bash
-git clone https://github.com/your-username/vite-react-ts-starter.git
-```
+To install and use this package, you can follow these simple steps:
 
-2. **Install dependencies:**:
+1. **Install Node.js**: Ensure you have Node.js and npm (Node Package Manager) installed on your system. You can download and install them from [nodejs.org](https://nodejs.org/).
 
-```bash
-cd vite-react-ts-starter
-npm install
-```
+2. **Create a New Project**: Use the following command to create a new project using this package:
+
+   ```bash
+   npx @chowdhury/vite-react-redux-ts-starter my-app
+   cd my-app
+   npm install
+   ```
 
 3. **Run the development server:**:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 This will start the development server, and your app will be available at http://localhost:5173.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
 
 ## Available Scripts
 
@@ -111,6 +97,21 @@ src
 ├── main.tsx                            # app entry
 ├── setupTests.ts
 ├── vite-env.d.ts
+```
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
 ```
 
 ## License
