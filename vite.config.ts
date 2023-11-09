@@ -11,10 +11,14 @@ export default defineConfig({
     host: true,
     strictPort: true,
   },
+  build: {
+    outDir: "build",
+    sourcemap: true,
+  },
   test: {
     globals: true,
     environment: "jsdom",
-    setupFiles: ["./vitest.config.ts"],
+    setupFiles: "src/setupTests",
     css: true,
   },
 });

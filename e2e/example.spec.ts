@@ -1,21 +1,34 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { expect, test } from "@playwright/test";
+import counterReducer, {
+  CounterState,
+  decrement,
+  increment,
+  incrementByAmount,
+} from "../src/features/counter/counterSlice";
 
-test("has title", async ({ page }) => {
-  await page.goto("https://playwright.dev/");
+describe("counter reducer", () => {
+  const initialState: CounterState = {
+    value: 3,
+    status: "idle",
+  };
+  it("should handle initial state", () => {
+    expect(counterReducer(undefined, { type: "unknown" })).toEqual({
+      value: 0,
+      status: "idle",
+    });
+  });
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
+  it("should handle increment", () => {
+    const actual = counterReducer(initialState, increment());
+    expect(actual.value).toEqual(4);
+  });
 
-test("get started link", async ({ page }) => {
-  await page.goto("https://playwright.dev/");
+  it("should handle decrement", () => {
+    const actual = counterReducer(initialState, decrement());
+    expect(actual.value).toEqual(2);
+  });
 
-  // Click the get started link.
-  await page.getByRole("link", { name: "Get started" }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(
-    page.getByRole("heading", { name: "Installation" }),
-  ).toBeVisible();
+  it("should handle incrementByAmount", () => {
+    const actual = counterReducer(initialState, incrementByAmount(2));
+    expect(actual.value).toEqual(5);
+  });
 });

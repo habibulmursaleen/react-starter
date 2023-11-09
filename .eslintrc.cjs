@@ -21,7 +21,7 @@ module.exports = {
     project: "./tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
-  ignorePatterns: ["dist/"],
+  ignorePatterns: ["build/"],
   rules: {
     "react/react-in-jsx-scope": 0,
     "import/no-extraneous-dependencies": "off",

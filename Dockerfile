@@ -7,4 +7,4 @@ COPY . .
 CMD ["npm", "run", "dev"]
 
 # FROM nginx
-# COPY --from=build /app/dist /user/share/nginx/html
+# COPY --from=build /app/build /user/share/nginx/html
