@@ -1,4 +1,4 @@
-# Vite React TypeScript Starter
+# Vite React Redux TypeScript Templet
 
 A minimalistic Vite-based starter template for building React applications with TypeScript. This starter kit provides a well-configured development environment and includes essential tools and libraries for efficiently developing and maintaining your React projects.
 
