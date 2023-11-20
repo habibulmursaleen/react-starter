@@ -1,3 +1,12 @@
+[![npm Version](https://img.shields.io/npm/v/@chowdhury/vite-react-redux-ts-starter.svg)](https://www.npmjs.com/package/@chowdhury/vite-react-redux-ts-starter)
+[![npm Downloads](https://img.shields.io/npm/dt/@chowdhury/vite-react-redux-ts-starter.svg)](https://www.npmjs.com/package/@chowdhury/vite-react-redux-ts-starter)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/@chowdhury/vite-react-redux-ts-starter)](https://socket.dev/npm/package/@chowdhury/vite-react-redux-ts-starter)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Code Style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
+[![GitHub Build Status](https://github.com/habibulmursaleen/vite-react-ts-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/habibulmursaleen/vite-react-ts-starter/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![GitHub Releases](https://img.shields.io/github/release/habibulmursaleen/vite-react-ts-starter.svg)](https://github.com/habibulmursaleen/vite-react-ts-starter/releases)
+
 # Vite React Redux TypeScript Templet
 
 A minimalistic Vite-based starter template for building React applications with TypeScript. This starter kit provides a well-configured development environment and includes essential tools and libraries for efficiently developing and maintaining your React projects.
