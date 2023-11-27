@@ -9,7 +9,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![GitHub Releases](https://img.shields.io/github/release/habibulmursaleen/vite-react-ts-starter.svg)](https://github.com/habibulmursaleen/vite-react-ts-starter/releases)
 
-A minimalistic Vite-based starter template for building React applications with TypeScript. This starter kit provides a well-configured development environment and includes essential tools and libraries for efficiently developing and maintaining your React projects.
+A minimalistic Vite-based starter template for building React applications with TypeScript. This starter kit provides a well-configured development environment and includes essential tools and shadcn/ui libraries for efficiently developing and maintaining your React projects.
 
 ## Features
 
@@ -24,6 +24,7 @@ A minimalistic Vite-based starter template for building React applications with 
 - **Playwright**: For end-to-end testing.
 - **Husky and lint-staged**: For pre-commit code quality checks.
 - **Commitlint**: For ensuring consistent commit messages.
+- **Shadcn/ui**: For modern UI components build on top of RadixUI and TailwindCSS. 
 
 # Getting Started
 
@@ -80,6 +81,7 @@ src
 │   ├── form
 │   ├── layouts
 │   └── ui
+      ├── button (checkout from here https://ui.shadcn.com/docs/components/button)
 ├── features
 │   ├── counter
 │      ├── counterAPI.ts
