@@ -1,7 +1,7 @@
 {
   "name": "@chowdhury/vite-react-redux-ts-starter",
   "description": "A starter template for React with Typescript using Vite and Redux",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "bin": "./bin/cli.js",
   "repository": {
