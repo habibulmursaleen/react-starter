@@ -33,4 +33,4 @@ if (!installedDeps) {
 console.log(
   "Congratulations! You are ready. Follow the following commands to start",
 );
-console.log(`cd ${repoName} && npm start`);
+console.log(`cd ${repoName} && npm run dev`);

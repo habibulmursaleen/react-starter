@@ -26,5 +26,9 @@ module.exports = {
     "react/react-in-jsx-scope": 0,
     "import/no-extraneous-dependencies": "off",
     "import/no-cycle": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
   },
 };

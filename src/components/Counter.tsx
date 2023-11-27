@@ -9,6 +9,9 @@ import {
   incrementIfOdd,
   selectCount,
 } from "../features/counter/counterSlice";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 function Counter() {
   const count = useAppSelector(selectCount);
@@ -18,70 +21,73 @@ function Counter() {
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div>
-      <h1
-        className="text-3xl font-bold mt-8 text-violet-300"
-        data-testid="app-title"
-      >
-        Vite + React + Redux + TypeScript + Tailwind
-      </h1>
-      <div className="card p-4 mt-4 bg-white rounded-lg shadow-md">
+    <div className="flex flex-col items-center justify-center">
+      <div className="space-x-2 space-y-6">
+        <Badge variant="outline">Vite</Badge>
+        <Badge variant="default">React</Badge>
+        <Badge variant="default">Tailwind</Badge>
+        <Badge variant="default">Shadcn/ui</Badge>
+        <Badge variant="secondary">Redux</Badge>
+        <Badge variant="outline">TypeScript</Badge>
+      </div>
+
+      <div className="card p-4 mt-4 bg-white rounded-lg shadow-md space-y-6">
         <div className="flex items-center justify-center">
-          <button
-            type="button"
-            aria-label="Decrement value"
+          <Button
+            variant="destructive"
+            size="default"
             onClick={() => dispatch(decrement())}
-            className="px-4 py-2 rounded bg-violet-500 text-white hover:bg-violet-600"
           >
             -
-          </button>
+          </Button>
+
           <span className="text-2xl mx-4 text-gray-600">{count}</span>
-          <button
-            type="button"
-            aria-label="Increment value"
+          <Button
+            variant="default"
+            size="default"
             onClick={() => dispatch(increment())}
-            className="px-4 py-2 rounded bg-violet-500 text-white hover:bg-violet-600"
           >
             +
-          </button>
+          </Button>
         </div>
 
-        <div className="mt-4">
-          <input
-            aria-label="Set increment amount"
+        <div className="flex items-center justify-center space-x-2">
+          <Input
+            type="email"
+            placeholder="Email"
             value={incrementAmount}
             onChange={(e) => setIncrementAmount(e.target.value)}
-            className="px-4 py-2 rounded bg-violet-500 border border-violet-400"
           />
-          <button
-            type="button"
+
+          <Button
+            variant="default"
+            size="default"
             onClick={() => dispatch(incrementByAmount(incrementValue))}
-            className="ml-2 px-4 py-2 rounded bg-violet-500 text-white hover:bg-violet-600"
           >
             Add Amount
-          </button>
-          <button
-            type="button"
+          </Button>
+
+          <Button
+            variant="secondary"
+            size="default"
             onClick={() => dispatch(incrementAsync(incrementValue))}
-            className="ml-2 px-4 py-2 rounded bg-violet-500 text-white hover:bg-violet-600"
           >
             Add Async
-          </button>
-          <button
-            type="button"
+          </Button>
+
+          <Button
+            variant="outline"
+            size="default"
             onClick={() => dispatch(incrementIfOdd(incrementValue))}
-            className="ml-2 px-4 py-2 rounded bg-violet-500 text-white hover:bg-violet-600"
           >
             Add If Odd
-          </button>
+          </Button>
         </div>
-        <p className="text-gray-500 mt-4">
-          Edit <code className="font-mono">src/App.tsx</code> and save to test
+
+        <p className="read-the-docs mt-4">
+          Click on the Vite, React and Redux logos to learn more
         </p>
       </div>
-      <p className="read-the-docs mt-4">
-        Click on the Vite, React and Redux logos to learn more
-      </p>
     </div>
   );
 }
