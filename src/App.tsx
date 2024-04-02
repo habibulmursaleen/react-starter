@@ -6,6 +6,7 @@ import Counter from "./components/Counter";
 function App() {
   return (
     <>
+      <h1>hello world</h1>
       <div className="flex justify-center items-center">
         <a
           href="https://vitejs.dev"
