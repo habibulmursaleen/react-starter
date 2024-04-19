@@ -23,17 +23,19 @@ function Counter() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="space-x-2 space-y-6">
-        <Badge variant="outline">Vite</Badge>
-        <Badge variant="default">React</Badge>
-        <Badge variant="default">Tailwind</Badge>
-        <Badge variant="default">Shadcn/ui</Badge>
-        <Badge variant="secondary">Redux</Badge>
-        <Badge variant="outline">TypeScript</Badge>
+        <Badge data-testid="badge-vite" variant="outline">Vite</Badge>
+        <Badge data-testid="badge-react" variant="default">React</Badge>
+        <Badge data-testid="badge-tailwind" variant="default">Tailwind</Badge>
+        <Badge data-testid="badge-ui" variant="default">Shadcn/ui</Badge>
+        <Badge data-testid="badge-redux" variant="secondary">Redux</Badge>
+        <Badge data-testid="badge-typescript" variant="outline">TypeScript</Badge>
+        <Badge data-testid="badge-cypress" variant="outline">Cypress</Badge>
       </div>
 
       <div className="card p-4 mt-4 bg-white rounded-lg shadow-md space-y-6">
         <div className="flex items-center justify-center">
           <Button
+            data-testid="decrement-button"
             variant="destructive"
             size="default"
             onClick={() => dispatch(decrement())}
@@ -41,8 +43,9 @@ function Counter() {
             -
           </Button>
 
-          <span className="text-2xl mx-4 text-gray-600">{count}</span>
+          <span data-testid="count-span" className="text-2xl mx-4 text-gray-600">{count}</span>
           <Button
+          data-testid="increment-button"
             variant="default"
             size="default"
             onClick={() => dispatch(increment())}
@@ -53,6 +56,7 @@ function Counter() {
 
         <div className="flex items-center justify-center space-x-2">
           <Input
+          data-testid="amount-input"
             type="email"
             placeholder="Email"
             value={incrementAmount}
@@ -60,6 +64,7 @@ function Counter() {
           />
 
           <Button
+          data-testid="add-button"
             variant="default"
             size="default"
             onClick={() => dispatch(incrementByAmount(incrementValue))}
@@ -68,6 +73,7 @@ function Counter() {
           </Button>
 
           <Button
+          data-testid="asyn-button"
             variant="secondary"
             size="default"
             onClick={() => dispatch(incrementAsync(incrementValue))}
@@ -76,6 +82,7 @@ function Counter() {
           </Button>
 
           <Button
+          data-testid="odd-button"
             variant="outline"
             size="default"
             onClick={() => dispatch(incrementIfOdd(incrementValue))}
@@ -84,7 +91,7 @@ function Counter() {
           </Button>
         </div>
 
-        <p className="read-the-docs mt-4">
+        <p data-testid="footer-text" className="read-the-docs mt-4">
           Click on the Vite, React and Redux logos to learn more
         </p>
       </div>

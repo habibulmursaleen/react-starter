@@ -21,7 +21,7 @@ A minimalistic Vite-based starter template for building React applications with 
 - **Tailwind CSS**: A utility-first CSS framework for quickly styling your components.
 - **ESLint and Prettier**: airbnb linting is used for code linting and formatting to maintain code consistency.
 - **Jest and Testing Library**: For writing and running tests.
-- **Playwright**: For end-to-end testing.
+- **Cypress**: For end-to-end testing.
 - **Husky and lint-staged**: For pre-commit code quality checks.
 - **Commitlint**: For ensuring consistent commit messages.
 - **Shadcn/ui**: For modern UI components build on top of RadixUI and TailwindCSS. 

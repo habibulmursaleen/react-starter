@@ -18,7 +18,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["@testing-library/jest-dom"],
   },
   "include": [
     "vite.config.ts",
@@ -31,9 +32,9 @@
     "src/**/*.tsx",
     "src",
     "setupTests.ts",
-    "playwright.config.ts",
     "e2e",
-    "bin"
+    "bin",
+    "cypress"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
