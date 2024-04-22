@@ -43,7 +43,7 @@ function Counter() {
             -
           </Button>
 
-          <span data-testid="count-span" className="text-2xl mx-4 text-gray-600">{count}</span>
+          <span data-testid="count-span" className="text-2xl mx-4 text-black-600">{count}</span>
           <Button
           data-testid="increment-button"
             variant="default"
