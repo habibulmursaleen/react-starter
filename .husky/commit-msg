@@ -4,3 +4,4 @@
 npx --no -- commitlint --edit 
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 npx husky add .husky/pre-push 'npx --no-install jest'
+npx --no-install commitlint --edit "$1"

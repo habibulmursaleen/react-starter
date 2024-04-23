@@ -20,7 +20,7 @@ A minimalistic Vite-based starter template for building React applications with 
 - **React-Redux**: Official React bindings for Redux.
 - **Tailwind CSS**: A utility-first CSS framework for quickly styling your components.
 - **ESLint and Prettier**: airbnb linting is used for code linting and formatting to maintain code consistency.
-- **Jest and Testing Library**: For writing and running tests.
+- **Testing Library**: For writing and running tests.
 - **Cypress**: For end-to-end testing.
 - **Husky and lint-staged**: For pre-commit code quality checks.
 - **Commitlint**: For ensuring consistent commit messages.
@@ -106,7 +106,6 @@ src
 ├── App.tsx
 ├── index.css
 ├── main.tsx                            # app entry
-├── setupTests.ts
 ├── vite-env.d.ts
 ```
 

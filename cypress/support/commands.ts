@@ -10,18 +10,17 @@
 // ***********************************************
 
 declare namespace Cypress {
-    interface Chainable<Subject> {
-      /**
-       * Custom command to select elements by data-testid attribute.
-       * @param dataTestSelector The value of the data-testid attribute to select elements.
-       * @example
-       * cy.getDataTest('decrement-button')
-       */
-      getDataTest(dataTestSelector: string): Chainable<any>;
-    }
+  interface Chainable<Subject> {
+    /**
+     * Custom command to select elements by data-testid attribute.
+     * @param dataTestSelector The value of the data-testid attribute to select elements.
+     * @example
+     * cy.getDataTest('decrement-button')
+     */
+    getDataTest(dataTestSelector: string): Chainable<any>;
   }
+}
 
-  
 //
 //
 // -- This is a parent command --
@@ -50,6 +49,7 @@ declare namespace Cypress {
 //   }
 // }
 
-Cypress.Commands.add('getDataTest', (dataTestSelector) => {
-    return cy.get(`[data-testid="${dataTestSelector}"]`);
+Cypress.Commands.add("getDataTest", (dataTestSelector) => {
+  return cy.get(`[data-testid="${dataTestSelector}"]`);
 });
+
