@@ -11,7 +11,7 @@ import {
 } from "../features/counter/counterSlice";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-// import { Input } from "./ui/input";
+import { Input } from "./ui/input";
 
 function Counter() {
   const count = useAppSelector(selectCount);
