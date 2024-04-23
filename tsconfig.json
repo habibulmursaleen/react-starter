@@ -29,6 +29,7 @@
     "tailwind.config.js",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "src/__tests__",
     "src",
     "bin",
     "cypress/**/*.ts"

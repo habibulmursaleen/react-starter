@@ -13,7 +13,6 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   overrides: [],
-
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: "latest",
@@ -21,7 +20,7 @@ module.exports = {
     project: "./tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint", "prettier"],
-  ignorePatterns: ["build/"],
+  ignorePatterns: ["build/", "src/__tests__/"],
   rules: {
     "react/react-in-jsx-scope": 0,
     "import/no-extraneous-dependencies": "off",
