@@ -25,7 +25,7 @@
     "start:dev": "NODE_ENV=dev npm-run-dev",
     "lint": "eslint . --ext js,jsx,mjs,ts,tsx --fix",
     "test": "vitest",
-    "cypress": "cypress open",
+    "cypress": "npx cypress open",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "preview": "vite preview",
     "precommit": "npm run lint && npm run format",
